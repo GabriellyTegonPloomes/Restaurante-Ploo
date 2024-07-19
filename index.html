@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Ploo</title>
+
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos/reset.css">
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Restaurante Ploo</h1>
+  </header>
+
+  <main>
+    <section class="prato">
+      <h1>Primeiro, seu prato</h1>
+      <div class="container-produtos">
+        <!-- produto 1-->
+        <div class="produto" onclick="selecionarPrato(this, 'prato')">
+          <div class="img-div">
+            <img src="https://cdn.outback.com.br/wp-data/wp-content/uploads/2018/10/42_Chicken-on-the-Barbie_1.jpg" alt="Frango grelhado">
+          </div>
+          <p><strong>Frango grelhado</strong></p>
+          <p><small>Frango grelhado bem douradinho</small></p>
+          <p class="preco">R$ 49,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <!-- produto 2-->
+        <div class="produto" onclick="selecionarPrato(this, 'prato')">
+          <div class="img-div">
+            <img src="https://cdn.outback.com.br/wp-data/wp-content/uploads/2024/06/Outback-Homestead-Steak-675x480.webp" alt="Bife com fritas">
+          </div>
+          <p><strong>Bife com fritas</strong></p>
+          <p><small>A melhor combinação</small></p>
+          <p>R$ 75,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <!-- produto 3-->
+        <div class="produto" onclick="selecionarPrato(this, 'prato')">
+          <div class="img-div">
+            <img src="https://cdn.outback.com.br/wp-data/wp-content/uploads/2024/06/Outback-Mate_s-Fettuccine-675x480.webp" alt="Macarrão">
+          </div>
+          <p><strong>Macarrão</strong></p>
+          <p><small>Macarrão acompanhado de frango</small></p>
+          <p>R$ 52,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="bebida">
+      <h1>Agora, sua bebida</h1>
+      <div class="container-produtos">
+        <!-- bebiba 1 -->
+        <div class="produto" onclick="selecionarPrato(this, 'bebida')">
+          <div class="img-div">
+            <img src="https://crsupermercados.com.br/cdn/shop/files/coca_350ml_800x.png?v=1700754095" alt="Coca-cola">
+          </div>
+          <p><strong>Coca-cola</strong></p>
+          <p><small>Lata 350ml</small></p>
+          <p>R$ 4,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <!-- bebiba 2 -->
+        <div class="produto" onclick="selecionarPrato(this, 'bebida')">
+          <div class="img-div">
+            <img src="data:image/jpeg;base64,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" alt="Fanta">
+          </div>
+          <p><strong>Fanta</strong></p>
+          <p><small>Lata 350ml</small></p>
+          <p>R$ 5,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <!-- bebiba 3 -->
+        <div class="produto" onclick="selecionarPrato(this, 'bebida')">
+          <div class="img-div">
+            <img src="https://www.brasileuquero.com/cdn/shop/products/7891991008877_1080x.png?v=1632146161" alt="Guaraná">
+          </div>
+          <p><strong>Guaraná</strong></p>
+          <p><small>Lata 350ml</small></p>
+          <p>R$ 6,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobremesa">
+      <h1>Por fim, sua sobremesa</h1>
+      <div class="container-produtos">
+        <!-- sobremesa 1 -->
+        <div class="produto" onclick="selecionarPrato(this, 'sobremesa')">
+          <div class="img-div">
+            <img src="https://cdn.outback.com.br/wp-data/wp-content/uploads/2020/10/Smores-1-200x200.png" alt="Smores">
+          </div>
+          <p><strong>Smores</strong></p>
+          <p><small>Biscoito, chocolate e marshmallow</small></p>
+          <p>R$ 25,00</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <!-- sobremesa 2 -->
+        <div class="produto" onclick="selecionarPrato(this, 'sobremesa')">
+          <div class="img-div">
+            <img src="https://cdn.outback.com.br/wp-data/wp-content/uploads/2018/10/Milkshake.jpg" alt="Milkshake">
+          </div>
+          <p><strong>Milkshake</strong></p>
+          <p><small>Milkshake de chocolate</small></p>
+          <p>R$ 21,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+        <!-- sobremesa 3 -->
+        <div class="produto" onclick="selecionarPrato(this, 'sobremesa')">
+          <div class="img-div">
+            <img src="https://cdn.outback.com.br/wp-data/wp-content/uploads/2018/10/Chocolate-Thunder-From-Down-Under_305x342.png" alt="Brownie com sorvete">
+          </div>
+          <p><strong>Brownie com sorvete</strong></p>
+          <p><small>Brownie, sorvete e calda de chocolate</small></p>
+          <p>R$ 32,90</p>
+          <ion-icon class="check" name="checkmark-circle"></ion-icon>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <button onclick="clickbotao()" disabled="true">Selecione os 3 itens para fechar o pedido</button>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
